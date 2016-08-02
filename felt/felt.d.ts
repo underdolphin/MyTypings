@@ -1,5 +1,6 @@
 declare module 'felt' {
-    function Felt(config?, recipe?: any, opts?: Felt.Opts);
+    function Felt(recipe?: any, opts?: Felt.Opts);
+    function Felt(config: string);
     namespace Felt {
         interface Opts {
             src: string,
